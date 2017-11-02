@@ -1,37 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="zxx">
 <head>
     <title>4Wings Foundation</title>
     <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Rozha+One%7CSlabo+27px" rel="stylesheet">
+    
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
-    <header class="box">
+    <header>
+        <ul class="langs">
+            <li><a href="#">English</a></li>
+            <li><a href="#">Français</a></li>
+            <li><a href="#">Nederlands</a></li>
+        </ul>
         <nav>
-            <ul>
-                <li>What we do</li>
-                <li>Who we are</li>
-                <li>Where to find us</li>
+            <ul class="navig">
+                <li><a class="scrollTo" href="#why">Notre projet</a></li>
+                <li><a class="scrollTo" href="#who">Qui sommes-nous ?</a></li>
+                <li><a class="scrollTo" href="#forwho">Nos cibles</a></li>
+                <li><a class="scrollTo" href="#what">Notre secteur</a></li>
             </ul>
         </nav>
     </header>
+    
     <div class="allbody">
-        <section class="innerbody box">
+       <section id="logodiv" class="innerbody box">
+            <img class="logo" src="./img/logo.png" alt="4 Wings Foundation's logo">
             <h1>4 Wings Foundation</h1>
-            <img src="./img/logo.png" alt="4 Wings Foundation's logo">
-            <h2>We fight against precariousness in Belgium !</h2>
-            <div class="grid">
-                <p>A unique professional and experienced team who run the day-to-day activities</p>
-                <p>We are philanthropist and impact investor</p>
-                <p>Personalised accompaniment, networking, and various forms of support and financing</p>
-            </div>
-            <ul class="socials">
+                <h2>Donner des ailes à l’innovation sociétale !</h2>
                 <p>Follow us on</p>
-                <li>Facebook</li>
-                <li>Twitter</li>
-            </ul>
+                <ul class="socials">
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                </ul>
         </section>
+        <main id="pdiv">
+            <section>
+                <h2 id="why">Pourquoi avoir créé la Fondation 4WINGS ?</h2>
+                <div class="readblock">
+                    <p class="fleft">
+                        <img class="inimg" src="./img/4wings_brochure_images_1.jpg" alt="IMG" />
+                    </p>
+                    <p class="fright">En Belgique, les réalités économiques et sociales se complexifient sans cesse. De plus en plus d’hommes, de femmes et d’enfants se retrouvent en situation précaire. Les défis sont de plus en plus nombreux pour les populations fragiles.<br/>
+                    La 4WINGS Foundation a une forte volonté d’agir pour <strong>renforcer les liens sociaux et encourager une société plus résiliente.</strong></p>
+                </div>
+                <h2 id="who" class="clearboth">Qui sommes-nous ?</h2>
+                <div class="readblock">
+                    <p>La Fondation a été créée à l’initiative de <strong>29 membres d’une même famille</strong>. La moyenne d’âge est plutôt jeune (37 ans) et les membres partagent une volonté forte d’entreprendre, de créer et de partager.</p>
+                    <p>Les membres de notre famille ont décidé d’agir ensemble. Nous voulons soutenir les efforts des entrepreneurs sociaux dans leur pratique pour amplifier leur impact sociétal. Pour accomplir cette mission, nous sommes accompagnés par <strong>Virginie et son équipe de professionnels</strong> expérimentés. C’est cette équipe qui pilote la Fondation au quotidien.</p>
+                </div>
+                <h2 id="forwho" cla>Nos cibles</h2>
+                <div class="readblock">
+                    <p class="fleft">
+                        <img class="inimg" src="./img/4wings_brochure_images_6.jpg" alt="IMG" />
+                    </p>
+                    <p class="fright">La Fondation sélectionne les projets sur base d’un <strong>processus formel</strong>, clair et transparent. Elle s’appuie sur l’<strong>expertise</strong> de son équipe, de ses membres, et collabore avec des experts extérieurs. Leur connaissance approfondie des réseaux d’acteurs du secteur de la précarité et de l’entreprenariat social en Belgique lui permet de focaliser son action pour avoir plus d’impact. <br/>
+                    Nous cherchons par ailleurs à créer des <strong>synergies</strong> entre les projets soutenus.</p>
+                </div>
+                <h2 id="what" class="clearboth">Notre secteur</h2>
+                <div class="readblock">
+                    <p>Quels sont vos secteurs d’actions ? 4WINGS a choisi de soutenir prioritairement des initiatives innovantes dans le <strong>logement</strong>, la <strong>tech-education</strong> et la <strong>santé par la nutrition</strong>, trois domaines clés dans la lutte contre la précarité en Belgique.</p>
+                </div>
+            </section>
+        </main>
     </div>
+    <script src="./js/jquery.js"></script>
     <script src="./js/app.js"></script>
 </body>
 </html>
