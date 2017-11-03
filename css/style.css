@@ -138,11 +138,9 @@ nav {
     text-align: center;
     height: 100vh;
     width: 300px;
-    z-index: -1;
     padding-top: 70px;
     font-size: 1em;
     border-right: 5px solid #2b2c57;
-    background: white;
     overflow-y: scroll;
     direction: rtl;
 }
