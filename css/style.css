@@ -51,6 +51,7 @@ main h2:before {
     border-radius: 50%;
     transform: translateX(-27.5px);
     z-index: 5;
+    position: relative;
 }
 main h2:after {
     content: "";
