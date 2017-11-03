@@ -62,4 +62,6 @@ p {
 }
 #firstinfo {
     background-attachment: fixed;
+    background-color: white;
+    background-size: cover;
 }
