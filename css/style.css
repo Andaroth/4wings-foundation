@@ -214,8 +214,11 @@ p.self {
     max-width: 100%;
 }
 #firstinfo {
+    background-color: white;
     background-image: url("../img/4wings_brochure_images_6.jpg");
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     text-align: center;
     font-size: 1.5em;
 }
