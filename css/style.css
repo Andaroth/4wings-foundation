@@ -159,8 +159,7 @@ p.quote {
     text-align: center;
     font-size: 1.2em;
     color: #2b2c57;
-    border-top: 2px dashed #DDD;
-    border-radius: 5px;
+    border: 2px dashed #DDD;
     padding: 5px 10px;
     max-width: 350px;
     margin: 15px auto;
@@ -168,7 +167,7 @@ p.quote {
 p.self {
     max-width: 600px;
     text-align: center;
-    margin: 0 auto;
+    margin: 15px auto;
 }
 .readblock {
     display: grid;
