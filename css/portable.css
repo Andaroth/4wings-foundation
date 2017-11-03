@@ -1,12 +1,13 @@
 header {
     background: white;
     text-transform: capitalize;
+    left: 0;
+    margin-left: 0;
+    text-align: center;
+    padding-left: 0;
 }
 .allbody {
     display: block;
-}
-.langs {
-    display: none;
 }
 .navig {
     height: 60px;
@@ -43,16 +44,17 @@ header {
 #pdiv > *:last-child {
     margin-bottom: initial;
 }
+h1 {
+    width: 260px;
+    height: 260px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 main h2 {
     margin-top: 40px;
 }
 .readblock {
-    display: initial;
-}
-.hidemobile {
-    display: none;
-}
-.showmobile {
     display: initial;
 }
 p {
@@ -62,4 +64,23 @@ p {
     background-attachment: fixed;
     background-color: white;
     background-size: cover;
+}
+.writeus {
+    border: 1px solid white;
+}
+.socials li {
+    background: transparent;
+}
+.socials li:hover {
+    background: rgba(255,255,255,.6);
+    border: initial;
+}
+
+@media screen and (max-width:560px) {
+    .hidemobile {
+        display: none;
+    }
+    .showmobile {
+        display: initial;
+    }
 }
