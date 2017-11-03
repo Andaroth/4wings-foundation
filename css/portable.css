@@ -1,0 +1,65 @@
+header {
+    background: white;
+    text-transform: capitalize;
+}
+.allbody {
+    display: block;
+}
+.langs {
+    display: none;
+}
+.navig {
+    height: 60px;
+    overflow: hidden;
+}
+.navig li:hover > a {
+    background: initial;
+}
+#pdiv {
+    margin-left: initial;
+    background: white;
+    margin-bottom: 100vh;
+}
+#logodiv {
+    position: fixed;
+    bottom: 0;
+    border-right: 0;
+    background: #2b2c57;
+    height: 100vh;
+    min-width: 100%;
+    overflow-y: initial;
+    direction: initial;
+}
+.logo {
+    display: none;
+}
+#logodiv * {
+    color: white;
+}
+#logodiv > div {
+    direction: initial;
+}
+#pdiv:after {
+    display: none;
+}
+#pdiv > *:last-child {
+    margin-bottom: initial;
+}
+main h2 {
+    margin-top: 40px;
+}
+.readblock {
+    display: initial;
+}
+.hidemobile {
+    display: none;
+}
+.showmobile {
+    display: initial;
+}
+p {
+    padding: 5px 15px;
+}
+#firstinfo {
+    background-attachment: fixed;
+}

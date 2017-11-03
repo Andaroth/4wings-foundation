@@ -1,10 +1,13 @@
 * {
     box-sizing: border-box;
 }
+*::-webkit-scrollbar { 
+    display: none; 
+}
 body {
     margin: 0;
     padding: 0;
-    font-family: "Slabo 27px";
+    font-family: "Roboto Condensed";
 }
 ul {
     margin: 0;
@@ -13,9 +16,35 @@ ul {
 }
 h1, h2 {
     color: #2b2c57;
-    font-family: "Rozha One";
+    font-family: "Josefin Sans";
     font-size: 1.6em;
-    text-align: center;
+    width: auto;
+}
+main h2 {
+    font-size: 2em;
+    margin-top: 25vh;
+}
+#why {
+    margin-top: initial;
+}
+main h2:before {
+    content: "";
+    display: block; 
+    float: left;
+    height: 30px;
+    width: 30px;
+    background: #2b2c57;
+    border-radius: 50%;
+    transform: translateX(-27.5px);
+    z-index: 5;
+}
+main h2:after {
+    content: "";
+    display: block;
+    height: 5px;
+    margin-left: 22px;
+    width: 100px;
+    border-bottom: 3px solid #2b2c57;
 }
 .box {
     /*background: rgba(43,44,87,.6);*/
@@ -26,18 +55,18 @@ header {
     left: 0;
     width: 100%;
     height: 60px;
-    background: linear-gradient(white,#DEDEDE);
+    background: rgba(255,255,255,.7);
+    /*background: linear-gradient(white,rgba(255,255,255,.7));*/
+    border-bottom: 4px solid #2b2c57;
+    z-index: 10;
 }
 header ul li a {
     text-decoration: none;
 }
-header ul li a:hover {
-    text-decoration: underline overline;
-}
 .langs {
     text-align: center;
     height: 60px;
-    width: 33%;
+    width: 300px;
     float: left;
 }
 .langs li {
@@ -50,34 +79,49 @@ header ul li a:hover {
     color: black;
     line-height: 60px;
     height: 60px;
+    padding: 0 5px;
+    transition: .2s ease;
 }
-.lang li a:hover {
-    color: blue;
+.langs li a:hover {
+    background: #2b2c57;
+    color: white;
 }
 nav {
-    float: left;
-    width: 67%;
+    width: auto;
     text-align: center;
+}
+.navig {
+    list-style: none;
 }
 .navig li {
     display: inline-block;
 }
 .navig li a {
+    display: block;
+    padding-left: 10px;
     padding-right: 10px;
-    border-right: 1px solid black;
-    margin-right: 10px;
+    border-left: 1px solid #2b2c57;
+    border-right: 1px solid #2b2c57;
+    margin: 0;
     color: black;
     line-height: 60px;
-    height: 60px;
+    height: 100%;
+    transition: .2s ease-in;
+}
+.navig li:first-child a {
+    border-left: 2px solid #2b2c57;
 }
 .navig li:last-child a {
-    padding-right: 0;
-    border: none;
-    margin-right: 0;
+    border-right: 2px solid #2b2c57;
+}
+.navig li:hover > a {
+    background: white;
+    border-bottom: 5px solid orange;
 }
 .logo {
     width: 100%;
     height: auto;
+    border-radius: 4px;
 }
 .allbody {
     display: flex;
@@ -93,57 +137,132 @@ nav {
     position: fixed;
     text-align: center;
     height: 100vh;
-    width: 33%;
-    top: 60px;
-    padding-top: 15px;
+    width: 300px;
+    z-index: -1;
+    padding-top: 70px;
     font-size: 1em;
-    border-right: 2px dashed rgba(43,44,87,.6);
+    border-right: 5px solid #2b2c57;
+    background: white;
+    overflow-y: scroll;
+    direction: rtl;
+}
+#logodiv > div {
+    direction: ltr;
+}
+#logodiv * {
+    color: #2b2c57;
 }
 #pdiv {
-    margin-top: 60px;
-    margin-left: 33%;
-    overflow-y: scroll;
+    margin-left: 300px;
     padding: 10px;
+    padding-top: 60px;
+    width: 100%;
+}
+#pdiv > *:last-child {
+    margin-bottom: 100px;
+}
+#pdiv:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(transparent,white);
+    position: fixed;
+    bottom: 0;
 }
 p {
     color: #b8baf5;
     font-size: 1.2em;
 }
-.readblock {
-    max-width: 60%;
-    margin: 0 20%;
+p.maxw {
+    max-width: 800px;
+    margin: 0 auto;
 }
-.fleft {
+p.info {
+    background: #2b2c57;
+    color: white;
+    padding: 15px;
+}
+p.quote {
+    text-align: center;
+    font-size: 1.2em;
+    color: #2b2c57;
+    border-top: 2px dashed #DDD;
+    border-radius: 5px;
+    padding: 5px 10px;
+    max-width: 350px;
+    margin: 15px auto;
+}
+p.self {
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+.readblock {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-gap: 2%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.inimg {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.fitimg {
+    max-width: 100%;
+}
+#firstinfo {
+    background-image: url("../img/4wings_brochure_images_6.jpg");
+    background-size: cover;
+    text-align: center;
+    font-size: 1.5em;
+}
+/*.fleft {
     float: left;
     width: 30%;
 }
-.inimg {
-    max-width: 100%;
-}
-.fright {
-    margin-left: 30%;
-    padding-left: 15px;
-}
+
+
 .clearboth {
     clear: both;
-}
+}*/
 strong {
-    font-size: 1.3em;
+    font-size: 1.1em;
+    color: orange;
 }
 .socials {
     padding: 0;
 }
 .socials li {
     display: inline-block;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    margin-right: 15px;
-    background: white;
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
+    height: 50px;
+    width: 50px;
+    background: white;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 1px solid grey;
+    transition: .2s ease-out;
 }
 .socials li:last-child {
     margin-right: 0;
+}
+.socials li:hover {
+    transform: scale(1.2);
+    border: 2px solid orange;
+}
+.endlogo {
+    margin-top: 60px;
+}
+footer {
+    float: left;
+    text-align: center;
+    margin-left: 300px;
+}
+.showmobile {
+    display: none;
 }
