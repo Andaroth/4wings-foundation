@@ -8,7 +8,8 @@ $(document).ready(function() {
     $(".scrollFoot").click(function(){
         $("body,html").animate({
             scrollTop: $( $(this).attr("href") ).offset().top
-        }, 500);
+        }, 750);
     return false;
     });
 });
+/* Handmade by Axel Fiolle - ax.fiolle@gmail.com */
