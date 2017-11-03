@@ -122,7 +122,9 @@ header ul li a {
     padding: 20px;
     max-width: 600px;
 }
-
+#container {
+    padding-bottom: 70px;
+}
 #pdiv {
     margin-left: 300px;
     padding: 10px;

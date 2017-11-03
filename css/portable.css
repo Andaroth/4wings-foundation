@@ -41,6 +41,9 @@ header {
 #logodiv > div {
     direction: initial;
 }
+#container {
+    padding-bottom: 10px;
+}
 #pdiv:after {
     display: none;
 }
