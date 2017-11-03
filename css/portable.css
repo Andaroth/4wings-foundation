@@ -38,6 +38,9 @@ header {
 #logodiv * {
     color: white;
 }
+#container p {
+    padding: 20px;
+}
 #logodiv > div {
     direction: initial;
 }
