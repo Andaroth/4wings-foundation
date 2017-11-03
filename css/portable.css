@@ -1,16 +1,57 @@
 header {
-    background: white;
-    text-transform: capitalize;
+    position: fixed;
+    top: 0;
     left: 0;
-    margin-left: 0;
-    text-align: center;
     padding-left: 0;
+    text-align: center;
+    width: 100%;
+    height: 45px;
+    background: rgba(255,255,255,.7);
+    text-transform: capitalize;
+    /*background: linear-gradient(white,rgba(255,255,255,.7));*/
+    border-bottom: 2px solid transparent;
+    z-index: 10;
+}
+header ul li a {
+    text-decoration: none;
+}
+.navig {
+    list-style: none;
+    width: auto;
+}
+.navig li {
+    display: inline-block;
+}
+.navig li a {
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: 1px solid #2b2c57;
+    border-right: 1px solid #2b2c57;
+    margin: 0;
+    color: black;
+    line-height: 45px;
+    height: 100%;
+    transition: .2s ease-in;
+}
+.navig li:first-child a {
+    border-left: 2px solid #2b2c57;
+}
+.navig li:last-child a {
+    border-right: 2px solid #2b2c57;
+}
+.navig li.desklastchild a {
+    border-right: 2px solid #2b2c57;
+}
+.navig li:hover > a {
+    background: white;
+    border-bottom: 5px solid orange;
 }
 .allbody {
     display: block;
 }
 .navig {
-    height: 60px;
+    height: 45px;
     overflow: hidden;
 }
 .navig li:hover > a {
@@ -46,6 +87,9 @@ header {
 }
 #container {
     padding-bottom: 10px;
+}
+#pdiv {
+    padding-top: 0;
 }
 #pdiv:after {
     display: none;
