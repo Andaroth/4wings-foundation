@@ -31,9 +31,6 @@ header {
     overflow-y: initial;
     direction: initial;
 }
-.logo {
-    display: none;
-}
 #logodiv * {
     color: white;
 }

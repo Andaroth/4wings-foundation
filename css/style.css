@@ -14,11 +14,25 @@ ul {
     padding-left: 0;
     list-style: none;
 }
+
 h1, h2 {
     color: #2b2c57;
     font-family: "Josefin Sans";
     font-size: 1.6em;
     width: auto;
+}
+h1 {
+    display: block;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+    height: 160px;
+    background-image: url("../img/4WINGS_Logotype_3lignes_positif_rvb.jpg");
+    background-size: 255px;
+    background-position: center;
+    background-size: contain;
 }
 main h2 {
     font-size: 2em;
@@ -118,11 +132,6 @@ nav {
     background: white;
     border-bottom: 5px solid orange;
 }
-.logo {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-}
 .allbody {
     display: flex;
     height: 100vh;
@@ -150,6 +159,7 @@ nav {
 #logodiv * {
     color: #2b2c57;
 }
+
 #pdiv {
     margin-left: 300px;
     padding: 10px;
@@ -224,8 +234,6 @@ p.self {
     float: left;
     width: 30%;
 }
-
-
 .clearboth {
     clear: both;
 }*/
