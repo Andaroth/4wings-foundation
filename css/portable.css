@@ -16,6 +16,9 @@ header {
 .navig li:hover > a {
     background: initial;
 }
+.navig li.desklastchild a {
+    border-right: 1px solid #2b2c57;
+}
 #pdiv {
     margin-left: initial;
     background: white;
@@ -75,12 +78,15 @@ p {
     background: rgba(255,255,255,.6);
     border: initial;
 }
-
-@media screen and (max-width:560px) {
+.showmobilefirst,
+li.showmobilefirst {
+    display: inline-block;
+}
+@media screen and (max-width:600px) {
     .hidemobile {
         display: none;
     }
-    .showmobile {
+    .showmobile, li.showmobile {
         display: initial;
     }
 }

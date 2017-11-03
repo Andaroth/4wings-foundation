@@ -105,6 +105,9 @@ header ul li a {
 .navig li:last-child a {
     border-right: 2px solid #2b2c57;
 }
+.navig li.desklastchild a {
+    border-right: 2px solid #2b2c57;
+}
 .navig li:hover > a {
     background: white;
     border-bottom: 5px solid orange;
@@ -268,6 +271,10 @@ footer {
     background: orange;
     transform: scale(1.1);
 }
-.showmobile {
+.showmobile,
+li.showmobile {
+    display: none;
+}
+li.showmobilefirst {
     display: none;
 }
