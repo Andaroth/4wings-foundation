@@ -48,8 +48,7 @@ main h2:before {
     height: 30px;
     width: 30px;
     background: #2b2c57;
-    border-radius: 50%;
-    transform: translateX(-27.5px);
+    transform: translateX(-27.5px) rotate(45deg);
     z-index: 5;
     position: relative;
 }
