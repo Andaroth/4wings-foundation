@@ -126,7 +126,7 @@ header ul li a {
     color: white;
 }
 #pdiv {
-    margin-left: 300px;
+    margin-left: 284px;
     padding: 10px 0;
     padding-top: 60px;
     width: 100%;
@@ -259,6 +259,7 @@ footer {
     direction: rtl;
     z-index: 20;
     background: white;
+    transform: translateX(-16px);
 }
 #logodiv > div {
     direction: ltr;

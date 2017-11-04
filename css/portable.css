@@ -73,6 +73,7 @@ header ul li a {
     min-width: 100%;
     overflow-y: initial;
     direction: initial;
+    transform: translateX(0);
 }
 #logodiv * {
     color: white;
