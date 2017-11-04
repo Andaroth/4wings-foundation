@@ -84,6 +84,9 @@ header ul li a {
 #logodiv > div {
     direction: initial;
 }
+.division {
+    padding: 35px 0;
+}
 #container {
     padding-bottom: 10px;
 }
