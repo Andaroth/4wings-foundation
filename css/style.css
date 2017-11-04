@@ -145,10 +145,11 @@ header ul li a {
 }
 .division {
     background: lightgrey;
-    padding: 35px 0 35px 15px;
+    padding: 35px 0;
 }
 .division p {
     color:darkslateblue;
+    padding-left: 15px;
 }
 .division h2 {
     margin-top: 50px;
