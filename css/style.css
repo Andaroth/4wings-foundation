@@ -29,7 +29,7 @@ h1 {
   height: auto;
   width: 100%;
   height: 160px;
-  background-image: url("../img/4WINGS_Logotype_3lignes_positif_rvb.jpg");
+  background-image: url("../img/4WINGS_Logotype_3lignes_positif_rvb_8c.png");
   background-size: 255px;
   background-position: center;
   background-size: contain;
@@ -144,7 +144,7 @@ header ul li a {
   bottom: 0;
 }
 .division {
-  background: lightgrey;
+  background: rgba(0,0,0,.05);
   padding: 35px 0;
 }
 .division p {
