@@ -75,9 +75,6 @@ header ul li a {
     direction: initial;
     transform: translateX(0);
 }
-#logodiv * {
-    color: white;
-}
 #container p {
     padding: 20px;
 }

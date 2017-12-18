@@ -29,7 +29,7 @@ h1 {
   height: auto;
   width: 100%;
   height: 160px;
-  background-image: url("../img/4WINGS_Logotype_3lignes_positif_rvb_8c.png");
+  background-image: url("../img/4WINGS_Logotype_3lignes_positif_rvb.webp");
   background-size: 255px;
   background-position: center;
   background-size: contain;
@@ -116,7 +116,7 @@ header ul li a {
   display: flex;
   width: 100%;
   height: 20vh;
-  background-image: url("../img/ban01.jpg");
+  background-image: url("../img/ban01.webp");
   background-position: center;
   background-size: cover;
 }
@@ -155,18 +155,19 @@ header ul li a {
   margin-top: 50px;
 }
 p {
-  color: #b8baf5;
+  color: #6d6fb4;
   font-size: 1.2em;
+  padding: 15px;
 }
 h3.maxw {
   color: #c47000;
   max-width: 800px;
   margin: 0 auto;
+  padding: 15px;
 }
 p.info {
   background: #2b2c57;
   color: white;
-  padding: 15px;
 }
 p.quote {
   text-align: center;
@@ -199,7 +200,7 @@ p.self {
 }
 #firstinfo {
   background-color: transparent;
-  background-image: url("../img/4wings_brochure_images_6.jpg");
+  background-image: url("../img/4wings_brochure_images_6.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
