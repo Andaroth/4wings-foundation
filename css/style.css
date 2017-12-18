@@ -29,7 +29,7 @@ h1 {
   height: auto;
   width: 100%;
   height: 160px;
-  background-image: url("../img/4WINGS_Logotype_3lignes_positif_rvb.webp");
+  background-image: url("../img/4WINGS_Logotype_3lignes_positif_rvb_8c.png");
   background-size: 255px;
   background-position: center;
   background-size: contain;
@@ -116,7 +116,7 @@ header ul li a {
   display: flex;
   width: 100%;
   height: 20vh;
-  background-image: url("../img/ban01.webp");
+  background-image: url("../img/ban01.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -200,7 +200,7 @@ p.self {
 }
 #firstinfo {
   background-color: transparent;
-  background-image: url("../img/4wings_brochure_images_6.webp");
+  background-image: url("../img/4wings_brochure_images_6.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
