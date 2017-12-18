@@ -109,6 +109,9 @@ h1 {
 main h2 {
     margin-top: 40px;
 }
+#banner {
+  margin-top: 45px;
+}
 .readblock {
     display: initial;
 }
